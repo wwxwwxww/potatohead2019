@@ -4,6 +4,8 @@ public class PotatoHead
 	// create instance variables
 	private boolean hasEyes;
 	private String eyeColor;
+	private String eyes;
+	private String costume;
 	// add one instance variable
 
 	// default constructor
