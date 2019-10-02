@@ -29,6 +29,13 @@ public class PotatoHead
 	{
 		return eyeColor;
 	}
+	/*
+	  int getNumbOfArms()
+	  accessor method for arms
+	 */
+	public int getNumbOfArms() {
+		return arms;
+	}
 
 	/* void setEyeColor(String someColor)
      MUTATOR METHOD - change an instance variable's value
