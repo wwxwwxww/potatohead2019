@@ -7,6 +7,7 @@ public class PotatoHead
 	private String eyes;
 	private String costume;
 	private int arms;
+	private int legs;
 	// add one instance variable
 
 	// default constructor
@@ -16,6 +17,7 @@ public class PotatoHead
 		hasEyes = false;
 		eyeColor = "unknown";
 		arms = 0;
+		legs = 0;
 	}
 
 	/*
@@ -50,6 +52,9 @@ public class PotatoHead
 	public void setNumbOfArms(int numbArms) {
 		arms = numbArms;
 	}
+	public void setNumberOfLegs(int _legs) {
+		legs = _legs;
+	}
 	/* String toString()
   *  ACCESSOR METHOD
 	*  method to access ***ALL*** instance variables
@@ -60,7 +65,8 @@ public class PotatoHead
 		String output;
 		output =  "Eyes: " + eyes;
 		output += "\nCostume: " + costume;
-		output += "\nNumber of Arms: " + arms; 
+		output += "\nNumber of Arms: " + arms;
+		output += "\nNumber of Legs: " + legs;
 		return output;
 	}
 } 
