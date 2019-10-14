@@ -8,6 +8,8 @@ public class PotatoHead
 	private String costume;
 	private int arms;
 	private String moustache;
+	private int legs;
+
 	// add one instance variable
 
 	// default constructor
@@ -18,6 +20,8 @@ public class PotatoHead
 		eyeColor = "unknown";
 		arms = 0;
 		moustache = "null"
+		legs = 0;
+
 	}
 
 	/*
@@ -67,10 +71,14 @@ public class PotatoHead
 	public void setNumbOfArms(int numbArms) {
 		arms = numbArms;
 	}
+	public void setNumberOfLegs(int _legs) {
+		legs = _legs;
+	}
 	/* String toString()
   *  ACCESSOR METHOD
 	*  method to access ***ALL*** instance variables
 	*  you should be adding your new instance variable here
+     @return output
 	*/
 	public String toString()
 	{
@@ -79,6 +87,7 @@ public class PotatoHead
 		output += "\nCostume: " + costume;
 		output += "\nNumber of Arms: " + arms;
 		output += "\nMoustache: " + moustache;
+		output += "\nNumber of Legs: " + legs;
 		return output;
 	}
 }

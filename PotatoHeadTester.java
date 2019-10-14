@@ -9,6 +9,7 @@ public class PotatoHeadTester {
 		 */
 		taterFace.setEyeColor("Red");
 		taterFace.setNumbOfArms(4);
+		taterFace.setNumberOfLegs(5);
 		/*
 		 Accessor Methods
 		 */
