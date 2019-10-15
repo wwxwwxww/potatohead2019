@@ -3,6 +3,7 @@ public class PotatoHead
 {
 	// create instance variables
 	private boolean hasEyes;
+	private String holdItem;
 	private String eyeColor;
 	private String eyes;
 	private String costume;
@@ -15,6 +16,7 @@ public class PotatoHead
 	{
 		// initialize ***ALL*** instance variables here
 		hasEyes = false;
+		holdItem = "unkown";
 		eyeColor = "unknown";
 		arms = 0;
 		legs = 0;
@@ -55,6 +57,10 @@ public class PotatoHead
 	public void setNumberOfLegs(int _legs) {
 		legs = _legs;
 	}
+	public String getItem()
+	{
+		return item;
+	}
 	/* String toString()
   *  ACCESSOR METHOD
 	*  method to access ***ALL*** instance variables
@@ -67,6 +73,7 @@ public class PotatoHead
 		output += "\nCostume: " + costume;
 		output += "\nNumber of Arms: " + arms;
 		output += "\nNumber of Legs: " + legs;
+		output += "\nHolding Item: " + item;
 		return output;
 	}
 } 
