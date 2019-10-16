@@ -7,7 +7,9 @@ public class PotatoHead
 	private String eyes;
 	private String costume;
 	private int arms;
+	private String moustache;
 	private int legs;
+
 	// add one instance variable
 
 	// default constructor
@@ -17,16 +19,24 @@ public class PotatoHead
 		hasEyes = false;
 		eyeColor = "unknown";
 		arms = 0;
+		moustache = "null"
 		legs = 0;
+
 	}
 
 	/*
 	VARIOUS ACCESSOR AND MUTATOR METHODS IN ALPHABETICAL ORDER GO HERE
 	*/
-
+	/* void changeMoustache(String _moustache)
+	mutator method for moustache
+	@param _moustache give a String*/
+	public void changeMoustache(String _moustache)
+	{
+		moustache = _moustache;
+	}
 	/* String getEyeColor()
      accessor method for eyeColor
-	*/ 
+	*/
 	public String getEyeColor()
 	{
 		return eyeColor;
@@ -38,10 +48,19 @@ public class PotatoHead
 	public int getNumbOfArms() {
 		return arms;
 	}
+	/*
+		in getMoustacheType()
+		accessor method for _moustache
+		@return moustache
+	*/
+	public int getMoustacheType()
+	{
+		return moustache;
+	}
 
 	/* void setEyeColor(String someColor)
      MUTATOR METHOD - change an instance variable's value
-	*/ 
+	*/
 	public void setEyeColor(String someColor)
 	{
 		eyeColor = someColor;
@@ -59,14 +78,16 @@ public class PotatoHead
   *  ACCESSOR METHOD
 	*  method to access ***ALL*** instance variables
 	*  you should be adding your new instance variable here
-	*/ 
+     @return output
+	*/
 	public String toString()
 	{
 		String output;
 		output =  "Eyes: " + eyes;
 		output += "\nCostume: " + costume;
 		output += "\nNumber of Arms: " + arms;
+		output += "\nMoustache: " + moustache;
 		output += "\nNumber of Legs: " + legs;
 		return output;
 	}
-} 
+}
